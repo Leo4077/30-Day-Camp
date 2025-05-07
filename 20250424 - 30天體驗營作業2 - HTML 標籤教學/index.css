@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+ol,
+ul {
+    list-style: none;
+}
+
+
+div {
+    margin: auto;
+}
+
+
+/* 共用 */
+img {
+    display: block;
+    width: 50%;
+}
+
+figure {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+p {
+    font-family: Helvetica, monospace;
+}
+
+#logo {
+    width: 10%;
+}
+
+div {
+    width: 80%;
+    padding: auto;
+}
