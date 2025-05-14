@@ -136,22 +136,125 @@ table {
 
 img {
     max-width: 100%;
+    width: 100%;
     height: auto;
+
+    margin-bottom: 16px;
 }
 
 .wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
 
+    flex-wrap: wrap;
+    padding: 0 15%;
 }
 
 .content {
-    border: black solid 1px;
     width: 30%;
-    height: 300px;
 
-    margin: 30px 0;
+    margin: 40px 0;
+    /* border: black solid 1px; */
+}
+
+.date {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+
+    margin-bottom: 4px;
+}
+
+.content div{
+    display: flex;
+    align-items: center;
+}
+
+.content span {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #0027D5;
+    margin-right: 4px;
+}
+
+.content .hot {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+
+    margin-left: 4px;
+    border-radius: 40px;
+    padding: 4px 10px; 
+    background-color:  #0027D5;
+}
+
+h2 {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: #000000;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+
+    margin-bottom: 8px;
+}
+
+.content p {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #4B4B4B;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+}
+
+a {
+    display: inline-block;
+
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #4B4B4B;
+
+    margin-top: 16px;
+    padding: 8px 16px;
+    border: black solid 1px;
+    border-radius: 40px;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    background-color: #0027D5;
 }
