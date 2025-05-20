@@ -15,10 +15,11 @@
 
 .footerDw{
 	display:flex;
-	width: 295px;
+    justify-content: center;
+	/* width: 295px; */
 	height: 24px;
 	font-size:16px;
-	padding-left: 812.5px;
+	/* padding-left: 812.5px; */
 	padding-top: 24px;
 	padding-bottom: 24px;
 
