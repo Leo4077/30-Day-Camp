@@ -1,0 +1,25 @@
+.footer{
+	/* width: 1920px; */
+	height: 280px;	
+	margin: 0 auto;
+}
+
+.footerUp{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	/* width: 1920px; */
+	height: 208px;
+	font-size:32px;	
+}
+
+.footerDw{
+	display:flex;
+	width: 295px;
+	height: 24px;
+	font-size:16px;
+	padding-left: 812.5px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+
+}
