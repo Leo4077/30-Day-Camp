@@ -169,7 +169,7 @@ img {
     margin-bottom: 4px;
 }
 
-.content div{
+.content div {
     display: flex;
     align-items: center;
 }
@@ -194,8 +194,8 @@ img {
 
     margin-left: 4px;
     border-radius: 40px;
-    padding: 4px 10px; 
-    background-color:  #0027D5;
+    padding: 4px 10px;
+    background-color: #0027D5;
 }
 
 h2 {
@@ -254,7 +254,7 @@ a:active {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: white;
     background-color: #0027D5;
 }
