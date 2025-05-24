@@ -1,26 +1,279 @@
-.footer{
-	/* width: 1920px; */
-	height: 280px;	
-	margin: 0 auto;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-.footerUp{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	/* width: 1920px; */
-	height: 208px;
-	font-size:32px;	
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
-.footerDw{
-	display:flex;
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+    display: flex;
     justify-content: center;
-	/* width: 295px; */
-	height: 24px;
-	font-size:16px;
-	/* padding-left: 812.5px; */
-	padding-top: 24px;
-	padding-bottom: 24px;
+    align-items: center;
+}
+
+.header a {
+	font-weight: bold;
+	color: #000000;
+	margin: 24px 20px;
+}
+
+
+/* intro */
+.blog-intro {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 640px;
+}
+
+.blog-intro div,
+ul {
+    flex: 1;
+}
+
+.image {
+    display: flex;
+
+    background: url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+}
+
+.content li {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+    margin-bottom: 4px;
+}
+
+.content li:nth-child(2) {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 8px;
+}
+
+li span:first-child {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: rgba(0, 39, 213, 1);
+
+    margin-right: 8px;
+}
+
+li span:nth-child(2) {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+
+    border-radius: 40px;
+    padding: 6px 12px;
+    background-color: rgba(0, 39, 213, 1)
+}
+
+.content li:nth-child(3) {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+    /* width: 1920px; */
+    height: 280px;
+    margin: 0 auto;
+}
+
+.footerUp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 1920px; */
+    height: 208px;
+    font-size: 32px;
+}
+
+.footerDw {
+    display: flex;
+    justify-content: center;
+    /* width: 295px; */
+    height: 24px;
+    font-size: 16px;
+    /* padding-left: 812.5px; */
+    padding-top: 24px;
+    padding-bottom: 24px;
 
 }
