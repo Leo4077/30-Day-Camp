@@ -173,8 +173,6 @@ img {
     margin: 24px 20px;
 }
 
-
-
 /* Intro */
 .blog-intro {
     display: flex;
@@ -183,30 +181,75 @@ img {
     height: 640px;
 }
 
+@media (max-width: 768px) {
+    .blog-intro {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+}
+
 .blog-intro div,
 ul {
     flex: 1;
 }
 
+.blog-intro div,
+.blog-intro ul {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+
+    .blog-intro div,
+    .blog-intro ul {
+        flex: initial;
+    }
+}
+
+
 .image {
     display: flex;
-
     background: url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-position: center;
+}
+
+@media (max-width: 768px) {
+    .image {
+        width: 100%;
+        height: 375px;
+    }
 }
 
 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 24px;
+    padding: 0 24px;
 }
+
+@media (max-width: 768px) {
+    .content {
+        width: 80%;
+        margin: 48px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        width: 100%;
+        margin: 48px;
+        padding: 0 12px;
+    }
+}
+
 
 .content li {
     font-weight: 500;
     font-size: 16px;
-
+    line-height: 150%;
     margin-bottom: 4px;
 }
 
@@ -252,10 +295,47 @@ ul {
     padding-top: 80px;
 }
 
+@media (max-width: 1024px) {
+    .article {
+        padding-top: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .article {
+        padding-top: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .article {
+        padding-top: 16px;
+    }
+}
+
 section {
     width: 50%;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+    section {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        width: 100%;
+        padding: 0 12px;
+    }
 }
 
 section h2 {
@@ -264,6 +344,13 @@ section h2 {
     color: #0027D5;
 
     margin-bottom: 24px;
+}
+
+
+@media (max-width: 768px) {
+    section h2 {
+        line-height: 150%;
+    }
 }
 
 section h3 {
@@ -323,10 +410,11 @@ section span {
     color: #0027D5;
 }
 
-section a a:hover,
-a:visited,
-a:link,
-a:active {
+section a,
+section a:link,
+section a:visited,
+section a:hover,
+section a:active {
     color: #0027D5;
     text-decoration: underline;
 }
@@ -343,12 +431,22 @@ section img {
     margin: 24px 0;
 }
 
-.button{
+.button {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-between;
 
     margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .button {
+        margin-bottom: 64px;
+    }
+}
+
+.button .btn {
+    text-decoration: none;
 }
 
 .btn {
@@ -362,23 +460,23 @@ section img {
     background-color: #FFFFFF;
 }
 
-.btn p{
-    margin:8px 0;
+.btn p {
+    margin: 8px 0;
 }
 
-.btn a a:hover,
-a:visited,
-a:link,
-a:active {
-    color:#4B4B4B;
-    text-decoration: none;
+.btn p,
+.btn p:link,
+.btn p:visited,
+.btn p:hover,
+.btn p:active {
+    color: #4B4B4B;
 }
 
-.button .btn:first-of-type svg{
-    margin-right:8px;
+.button .btn:first-of-type svg {
+    margin-right: 8px;
 }
 
-.button .btn:nth-of-type(2) svg{
+.button .btn:nth-of-type(2) svg {
     margin-left: 8px;
 }
 
@@ -390,6 +488,13 @@ a:active {
     margin: 0 auto;
 }
 
+
+@media (max-width: 768px) {
+    .footer {
+        height: 72px;
+    }
+}
+
 .footerUp {
     display: flex;
     justify-content: space-around;
@@ -398,16 +503,27 @@ a:active {
     font-size: 32px;
 }
 
-.footerUp div{
+
+@media (max-width: 768px) {
+    .footerUp {
+        display: none;
+    }
+}
+
+
+.footerUp div {
     display: flex;
 }
 
 .footerDw {
     display: flex;
     justify-content: center;
-    height: 24px;
+    align-items: center;
+    height: 72px;
     font-size: 16px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+}
 
+.footerUp p {
+    font-weight: 500;
+    font-size: 32px;
 }
