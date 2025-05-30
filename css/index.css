@@ -5,13 +5,14 @@
     justify-content: center;
 
     width: 100%;
-    height: 77vh;
+    height: 834px;
 }
 
 @media (max-width: 1200px) {
     .banner-up {
         flex-direction: column;
         justify-content: flex-start;
+        height: 1000px;
     }
 }
 
@@ -104,13 +105,14 @@
     padding: 80px 40px;
 
     background-color: #ffffff;
+
 }
 
 @media (max-width: 1200px) {
     .banner-dw {
         width: calc(100% - 48px);
-        position: relative;
-        top: -240px;
+        position: absolute;
+        top: 750px;
         margin: 0 24px;
         padding: 60px 40px;
     }
@@ -118,6 +120,7 @@
 
 @media (max-width: 480px) {
     .banner-dw {
+        top: 650px;
         padding: 40px 40px;
     }
 }
@@ -129,7 +132,7 @@
     line-height: 150%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .banner-dw p {
         font-weight: 500;
         font-size: 24px;
