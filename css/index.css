@@ -8,20 +8,39 @@
     height: 77vh;
 }
 
-.banner-up div {
-    flex: 1;
+@media (max-width: 1200px) {
+    .banner-up {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
 
-.banner-up div:nth-of-type(1) {
+.banner-up div {
+    flex: 1;
     background-size: cover;
     background-position: center;
+}
+
+@media (max-width: 1200px) {
+    .banner-up div {
+        flex: initial;
+    }
+}
+
+.index-image {
     background-image: url(https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
-.banner-up div:nth-of-type(2) {
-    background-size: cover;
-    background-position: center;
-    background-image: url(https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+@media (max-width: 1200px) {
+    .index-image {
+        height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .index-image {
+        height: 375px;
+    }
 }
 
 .index-introduce {
@@ -29,6 +48,24 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 80px;
+    background-image: url(https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+
+@media (max-width: 1200px) {
+    .index-introduce {
+        justify-content: flex-start;
+        height: 500px;
+        padding-top: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .index-introduce {
+        height: 375px;
+        padding-top: 24px;
+        padding-left: 24px;
+    }
 }
 
 .banner-up h1 {
@@ -38,7 +75,20 @@
     color: #0027D5;
 }
 
-.banner-up h2 {
+@media (max-width: 1600px) {
+    .banner-up h1 {
+        font-size: 80px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .banner-up h1 {
+        font-size: 60px;
+    }
+}
+
+.banner-up h3 {
     font-weight: 700;
     font-size: 28px;
     line-height: 150%;
@@ -56,14 +106,145 @@
     background-color: #ffffff;
 }
 
+@media (max-width: 1200px) {
+    .banner-dw {
+        width: calc(100% - 48px);
+        position: relative;
+        top: -240px;
+        margin: 0 24px;
+        padding: 60px 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-dw {
+        padding: 40px 40px;
+    }
+}
+
+
 .banner-dw p {
     font-weight: 500;
     font-size: 28px;
     line-height: 150%;
-
 }
+
+@media (max-width: 768px) {
+    .banner-dw p {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
+    }
+}
+
+
 
 .index-icon {
     display: flex;
     flex-direction: row;
+}
+
+/* Service */
+.service {
+    padding: 80px 16vw;
+}
+
+.service-img {
+    width: 33vw;
+    height: 100%;
+    display: flex;
+}
+
+img {
+    object-fit: cover;
+}
+
+.service ul li svg {
+    margin-bottom: 5px;
+}
+
+
+.service h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 150%;
+
+    margin-bottom: 32px;
+}
+
+.service ul {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin-bottom: 32px;
+}
+
+.service li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 320px;
+    padding: 0 5.7vw;
+}
+
+.service li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.odd,
+.even {
+    background-color: #ffffff;
+    width: 25vw;
+    padding: 24px;
+    z-index: 2;
+}
+
+.odd {
+    margin-left: -30px;
+}
+
+.even {
+    margin-right: -30px;
+}
+
+.service h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+}
+
+.service ul li h3 {
+    margin-bottom: 8px;
+}
+
+.service p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #4B4B4B;
+}
+
+.service-contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.service-contact a {
+    display: flex;
+    color: black;
+}
+
+.service-contact h3 {
+    margin-right: 8px;
+}
+
+.service-contact div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px black solid;
+    border-radius: 40px;
 }
