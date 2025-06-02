@@ -119,6 +119,7 @@
 
 @media (max-width: 480px) {
     .banner-dw {
+        width: calc(100% - 24px);
         margin: 0 12px;
         padding: 40px 24px;
     }
@@ -208,6 +209,7 @@ img {
 }
 
 @media (max-width: 768px) {
+
     .service h2,
     .blog h2 {
         font-size: 48px;
@@ -358,7 +360,7 @@ img {
 }
 
 /* Blog */
-.blog > div {
+.blog>div {
     display: flex;
     /* flex-direction: row;
     justify-content: center; */
