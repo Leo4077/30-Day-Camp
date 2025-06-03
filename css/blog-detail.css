@@ -282,22 +282,39 @@ section img {
     width: 108px;
     justify-content: center;
     align-items: center;
-
     border: 1px solid #000000;
     border-radius: 40px;
     background-color: #FFFFFF;
+    transition-duration: 0.3s;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #0027D5;
+    border: #0027D5 solid 1px;
 }
 
 .btn p {
     margin: 8px 0;
+    transition-duration: 0.3s;
 }
 
 .btn p,
 .btn p:link,
 .btn p:visited,
-.btn p:hover,
 .btn p:active {
     color: #4B4B4B;
+}
+
+.btn:hover p,
+.btn:hover svg {
+    color: white;
+}
+
+.btn svg {
+    color: #4B4B4B;
+    transition-duration: 0.3s;
+
 }
 
 .button .btn:first-of-type svg {

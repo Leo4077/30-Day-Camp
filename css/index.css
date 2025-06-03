@@ -145,24 +145,19 @@
 }
 
 /* Service */
-.service,
-.blog {
+.service {
     padding: 80px 16vw;
     background-color: rgba(251, 251, 251, 1);
 }
 
 @media (max-width: 1200px) {
-
-    .service,
-    .blog {
+    .service {
         padding: 64px;
     }
 }
 
 @media (max-width: 500px) {
-
-    .service,
-    .blog {
+    .service {
         padding: 12px;
     }
 }
@@ -197,21 +192,14 @@ img {
     margin-bottom: 32px;
 }
 
-.blog h2 {
-    margin-bottom: 24px;
-}
-
-.service h2,
-.blog h2 {
+.service h2 {
     font-weight: 700;
     font-size: 64px;
     line-height: 150%;
 }
 
 @media (max-width: 768px) {
-
-    .service h2,
-    .blog h2 {
+    .service h2 {
         font-size: 48px;
     }
 }
@@ -360,45 +348,104 @@ img {
 }
 
 /* Blog */
+.blog {
+    padding: 80px 0;
+    background-color: rgba(251, 251, 251, 1);
+
+}
+
+@media (max-width: 1200px) {
+    .blog {
+        padding: 64px;
+    }
+}
+
+@media (max-width: 500px) {
+    .blog {
+        padding: 12px;
+    }
+}
+
+.blog h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 150%;
+
+    margin-left: 16vw;
+    margin-bottom: 24px;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+@media (max-width: 1200px) {
+    .blog h2 {
+        margin-left: 0;
+        ;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog h2 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 500px) {
+    .blog h2 {
+        padding: 12px;
+    }
+}
+
 .blog>div {
     display: flex;
-    /* flex-direction: row;
-    justify-content: center; */
     align-items: center;
+    margin: 0 13vw;
+}
+
+.blog svg {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
 }
 
 .blog ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 24px;
+    gap: 1.25vw;
     padding: 0;
 }
 
 .content {
     width: 30%;
-
-    margin: 40px 0;
 }
 
-.content li {
+.content img {
+    margin-bottom: 16px;
+}
+
+.content .date {
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.content div {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+
 }
 
 .content span {
-    font-family: 'Noto Sans TC';
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 150%;
+    white-space: nowrap;
     color: #0027D5;
     margin-right: 4px;
 }
 
 .content .hot {
-    font-family: 'Noto Sans TC';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
@@ -446,9 +493,11 @@ img {
     padding: 8px 16px;
     border: black solid 1px;
     border-radius: 40px;
+    transition-duration: 0.3s;
 }
 
 .content a:hover {
     color: white;
     background-color: #0027D5;
+    border: #0027D5 solid 1px;
 }
