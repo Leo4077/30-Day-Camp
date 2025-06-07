@@ -455,6 +455,8 @@ img {
 .swiper-slide img {
     height: 200px;
     margin-bottom: 16px;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .swiper-slide .date {
@@ -708,13 +710,99 @@ img {
     border: #0027D5 solid 1px;
 }
 
-/* .case-img {
-    width: 57.5%;
-    height: 626px;
+.case-podcast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    margin-top: 40px;
     padding: 24px;
-    background-image: url(https://images.unsplash.com/photo-1573496129661-bd7fcc7e532b?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    object-fit: cover;
-    object-position: center center;
-    background-size: cover;
-    background-color: rgba(237, 237, 237, 1);
-} */
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.case-podcast>div {
+    flex: 1;
+}
+
+@media (max-width: 1750px) {
+    .case-podcast>div {
+        flex: 0 0 calc((100% - 24px) / 2);
+    }
+}
+
+@media (max-width: 800px) {
+    .case-podcast>div {
+        flex: 0 0 100%;
+    }
+}
+
+
+.case-podcast img {
+    width: 80px;
+    height: 80px;
+
+    margin-bottom: 16px;
+    border-radius: 60px;
+    object-position: 50% 15%;
+}
+
+.case-podcast>div>div {
+    padding-bottom: 8px;
+    border: transparent 1px solid;
+    border-bottom-color: rgba(75, 75, 75, 1);
+}
+
+.case-podcast h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    white-space: nowrap;
+    color: #000000;
+
+    margin-bottom: 8px;
+}
+
+.case-podcast-p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 8px;
+}
+
+.case-podcast-p p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    white-space: nowrap;
+    color: #4B4B4B;
+}
+
+.case-podcast-p svg {
+    margin-right: 8px;
+}
+
+
+.case-podcast a {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(75, 75, 75, 1);
+    user-select: none;
+    -webkit-user-select: none;
+
+    margin-top: 24px;
+    padding: 8px 16px;
+    border: rgba(75, 75, 75, 1) solid 1px;
+    border-radius: 40px;
+    transition-duration: 0.3s;
+}
+
+.case-podcast a:hover {
+    color: white;
+    background-color: #0027D5;
+    border: #0027D5 solid 1px;
+}
