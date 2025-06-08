@@ -172,6 +172,11 @@ img {
     font-weight: bold;
     color: #000000;
     margin: 24px 20px;
+    transition-duration: 0.3s;
+}
+
+.header a:hover {
+    color: #0027D5;
 }
 
 
