@@ -427,3 +427,29 @@ h2 {
     color: white;
     background-color: #0027D5;
 }
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pagination div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination a{
+    margin-top: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.pagination svg{
+    position: relative;
+    top:3px
+}
