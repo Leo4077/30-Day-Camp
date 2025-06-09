@@ -1041,6 +1041,13 @@ form .btn:hover {
     gap: 8px;
 }
 
+@media (max-width: 375px) {
+    .contact>div>a>div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 .contact>div>a>div>div {
     display: flex;
     justify-content: center;
@@ -1107,13 +1114,11 @@ form .btn:hover {
 }
 
 @media (max-width: 480px) {
-
     .contact-email {
         font-size: 24px;
     }
 
-    .contact-div-email p {
+    .contact .btn p {
         font-size: 24px;
     }
-
 }
