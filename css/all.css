@@ -141,7 +141,8 @@ table {
 }
 
 body {
-    font-family: 'Noto Sans TC';
+    font-family: 'Noto Sans TC', sans-serif;
+    ;
     font-style: normal;
     line-height: 150%;
 
