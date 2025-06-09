@@ -340,6 +340,13 @@ ul {
     align-items: center;
 }
 
+@media (max-width: 390px) {
+    .article-content div {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
 .article-content span {
     font-weight: 500;
     font-size: 24px;
