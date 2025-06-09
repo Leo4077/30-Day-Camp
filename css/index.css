@@ -1088,7 +1088,7 @@ form .btn:hover {
     border-bottom: rgba(0, 0, 0, 1) 1px solid;
     padding-top: 16px;
     padding-bottom: 16px;
-    transition-duration: color 0.5s;
+    transition-duration: 0.5s;
 }
 
 .contact a:hover {
