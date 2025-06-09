@@ -425,23 +425,24 @@ h2 {
     margin-right: auto;
 }
 
-.pagination a:hover svg path{
+.pagination a:hover svg path {
     fill: white;
 }
 
-.pagination div{
+.pagination div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.pagination a{
+.pagination a {
     margin-top: 0;
     border: none;
     border-radius: 0;
 }
 
-.pagination svg{
+.pagination svg {
     position: relative;
-    top:3px
+    top: 3px;
+    transition-duration: 0.3s;
 }
