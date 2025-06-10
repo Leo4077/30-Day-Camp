@@ -22,6 +22,12 @@
     }
 }
 
+@media (max-width: 480px) {
+    .banner-up {
+        margin-bottom: -450px;
+    }
+}
+
 .banner-up div {
     flex: 1;
     background-size: cover;
@@ -85,6 +91,12 @@
 @media (max-width: 1200px) {
     .banner-up h1 {
         font-size: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-up h1 {
+        font-size: 52px;
     }
 }
 
@@ -1046,7 +1058,8 @@ form .btn:hover {
         flex-direction: column;
         align-items: flex-start;
     }
-    .line-break-375{
+
+    .line-break-375 {
         display: block;
     }
 }
